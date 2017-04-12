@@ -53,12 +53,11 @@ all4=merge(all3,Day08,by=c(1))
 
 
 ####################################################################################################################
-# HEATMAPS
+# HEATMAPS ggplot
 ####################################################################################################################
 
 hmcol <- colorRampPalette(brewer.pal(9, "GnBu"))(100)
 
-#output <- do.call(rbind,lapply(all4,matrix,ncol=21,byrow=TRUE))
 
 all4 = unique(all4)
 all5 = all4[,2:ncol(all4)]
